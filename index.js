@@ -2,10 +2,8 @@
 let express = require('express')
 // Import Body parser
 let bodyParser = require('body-parser');
-// Import Mongoose
-let mongoose = require('mongoose');
 
-var OrientDB = require('orientjs');
+const path = require('path');
 
 var cors = require('cors');
 
@@ -29,9 +27,17 @@ app.use(bodyParser.urlencoded({
 // Setup server port
 var port = process.env.PORT || 8080;
 // Send message for default URL
-app.get('/', (req, res) => res.send('Bienvenido a gastos Compartidos'));
+//app.get('/', (req, res) => res.send('Bienvenido a gastos Compartidos'));
 // Launch app to listen to specified port
 // Import routes
+
+// Serve static files....
+app.use(express.static(__dirname + '/dist/'));
+
+// Send all requests to index.html
+app.get('/*', function(req, res) {
+  res.sendFile(path.join(__dirname + '/dist/index.html'));
+});
 
 // Use Api routes in the App
 app.use('/api', apiRoutes)
