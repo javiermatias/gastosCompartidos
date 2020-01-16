@@ -10,9 +10,9 @@ import { Gasto } from '../modelos/gasto';
 })
 export class GastoService {
 
-  private url = environment.apiUrl + '/gastosParcial';
+  private url = 'https://infinite-fjord-91851.herokuapp.com/api/' + 'gastosParcial';
 
-  private urlPost = environment.apiUrl + '/gastos';
+  private urlPost = 'https://infinite-fjord-91851.herokuapp.com/api/' + 'gastos';
   constructor(private http: HttpClient) { }
 
   getGastos(): Observable<any>  {
