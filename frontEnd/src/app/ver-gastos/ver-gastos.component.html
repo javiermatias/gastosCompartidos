@@ -1,0 +1,60 @@
+<div class="" id="page-wrapper">
+
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-lg-6">
+        <div class="white-box">
+            <!-- <app-bar-chart></app-bar-chart> -->
+            <div class="panel panel-default">
+                <div class="panel-heading panel-heading-no-divider">Lista de Gastos
+                </div>
+                
+                    <div class="table-responsive">
+                      <table class="table table-striped">
+                        <thead>
+                          <tr>
+                            <th>Participante</th>
+                            <th>Tipo Gasto</th>
+                            <th>Detalle</th>
+                            <th>Monto</th>
+                          </tr>
+                        </thead>
+                        <tbody>
+                          <tr *ngFor="let item of gastos">
+                          
+                              <td  *ngIf=" item.monto > 0">{{item.personaPago}}</td>
+                              <td *ngIf=" item.monto > 0" >{{item.tipoGasto}}</td>
+                              <td  *ngIf=" item.monto > 0">{{item.detalle}}</td>
+                              <td  *ngIf=" item.monto > 0">${{item.monto}}</td>
+                           
+                     
+                          </tr>
+                <!--           <tr>
+                            <td>Gustavo</td>
+                            <td>-$500</td>
+                            <td>+$400</td>
+                            <td>-$100</td>
+                          </tr>
+                          <tr>
+                            <td>Franco</td>
+                            <td>-$500</td>
+                            <td>+$400</td>
+                            <td>-$100</td>
+                          </tr> -->
+               
+                        </tbody>
+                      </table>
+                    </div>
+                  </div>
+      
+      
+      
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+

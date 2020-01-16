@@ -1,0 +1,106 @@
+<div class="" id="page-wrapper">
+  <div class="container-fluid">
+    <div class="row row-stat">
+      <div class="col-sm-12">
+        <div class="panel panel-default">
+          <div class="panel-heading panel-heading-divider">Cargar Gasto</div>
+          <div class="panel-body">
+            <div class="xs-mt-10 xs-mb-10  ">
+              <div class="row">
+                <div class="col-md-8">
+                  <form class="form-horizontal">
+
+                    <div class="form-group">
+                      <div class="row">
+                        <label class="col-sm-3 control-label" for="form-control-9">Tipo Gasto</label>
+                        <div class="col-sm-9">
+                          <select id="form-control-23" class="form-control" name="tipoGasto" [(ngModel)]="gasto.tipoGasto">                            
+                            
+                            <option value="Alojamiento">Alojamiento</option>
+                            <option value="Bebida">Bebida</option>
+                            <option value="Comida">Comida</option>
+                            <option value="Transporte">Transporte</option>
+                            <option value="Otro">Otro</option>
+                       
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+                 
+
+                    <div class="form-group">
+                      <div class="row">
+                        <label class="col-sm-3 control-label" for="form-control-5">Detalle</label>
+                        <div class="col-sm-9">
+                          <input id="form-control-1" class="form-control" type="email" name="detalle"
+                                 placeholder="Detalle de la compra( Un kilo de asado,etc)" [(ngModel)]="gasto.detalle">
+                        </div>
+                      </div>
+                    </div>
+
+
+                    <div class="form-group">
+                      <div class="row">
+                        <label class="col-sm-3 control-label" for="form-control-9">Quien Pago?</label>
+                        <div class="col-sm-9">
+                          <select id="form-control-10" class="form-control" name="persona" [(ngModel)]="gasto.personaPago">                            
+                           
+                           <!--  <option value="mobile">Franco</option> -->
+                            <!-- <option value="creative">Gustavo</option> -->
+                            <option value="Hugo">Hugo</option>
+                            <option value="Javier">Javier</option>
+                            <option value="Matias">Matias</option>
+                            <option value="Marcelo">Marcelo</option>
+                            
+                            
+                            
+                       
+                          </select>
+                        </div>
+                      </div>
+                    </div>
+
+
+
+
+                    <div class="form-group">
+                      <div class="row">
+                        <label class="col-sm-3 control-label" for="form-control-5">Monto:</label>
+                        <div class="col-sm-9">
+                          <input id="form-control-7" class="form-control" type="email" name="gasto"
+                                 placeholder="0,00" [(ngModel)]="gasto.monto">
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="form-group">
+                      <div class="row">
+                        
+                        <div class="col-sm-9">
+                          
+                        <!--   <label class="col-sm-3 control-label" for="form-control-5"></label>
+                            <button  id="form-control-6" class="btn btn-space btn-success"><i class="icon icon-left mdi mdi-check"
+                              (click)="guardarGastos()"></i>Cargar</button>
+                        
+                           -->
+                           <button (click)="guardarGasto()" class="btn btn-space btn-success"> Cargar</button>
+                        </div>
+                      </div>
+                    </div>
+
+
+                    
+                
+               
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+       
+      </div>
+    </div>
+  </div>

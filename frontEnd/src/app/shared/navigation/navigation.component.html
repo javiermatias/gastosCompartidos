@@ -1,0 +1,72 @@
+<!-- <div class="d-sm-none" > 
+      <button type="button" id="sidebarCollapse" class="btn btn-info">
+    <i class="fas fa-align-left"></i>
+    <span>Menu</span>
+</button> 
+
+</div>-->
+
+<div [ngClass]="status ? 'sidebar' : 'sidebar d-none d-sm-block'" >
+    
+    <ul class="nav in" id="side-menu">
+  <!--       <li class="sidebar-search hidden-sm hidden-md hidden-lg">
+           
+            <div class="input-group custom-search-form">
+                <input type="text" class="form-control" placeholder="Search..."> <span class="input-group-btn">
+            <button class="btn btn-default" type="button"> <i class="fa fa-search"></i> </button>
+            </span></div>
+           
+        </li> -->
+        <li class="user-pro">
+            <a href="#" class="text-center">
+                <div class="profile-img">
+                    <img src="assets/images/gasto.png"/>
+                </div>
+                <span>Gastos Compartidos</span>
+                <small class="text-center">App</small>
+            </a>
+        </li>
+        <li><a (click)="menu()" [routerLink]="['/dashboard']" [routerLinkActive]="['active']" class="waves-effect"><i class="fa fa-home" ></i> <span
+                class="hide-menu">Resumen</span></a></li>
+        <!-- <li class=""><a href="javascript:void(0);" class="waves-effect"><i class="fa fa-envelope-o"></i> <span
+                class="hide-menu"> Mailbox <span class="fa arrow"></span><span
+                class="label label-rouded label-danger pull-right">6</span></span></a>
+        </li> -->
+     <!--    <li>
+            <a [routerLink]="['/ui-elements']" [routerLinkActive]="['active']">
+                <i class="fa fa-edit"></i>
+                <span class="hide-menu">UI Elements</span>
+            </a>
+        </li>
+        <li>
+            <a  [routerLink]="['/forms']" [routerLinkActive]="['active']">
+                <i class="fa fa-edit"></i>
+                <span class="hide-menu">Form</span>
+            </a>
+        </li>
+        <li>
+            <a  [routerLink]="['/tables']" [routerLinkActive]="['active']">
+                <i class="fa fa-bars"></i>
+                <span class="hide-menu">Tables</span>
+            </a>
+        </li> -->
+
+
+        <li>
+            <a  [routerLink]="['/verGasto']" [routerLinkActive]="['active']" (click)="menu()" >
+                <i class="fa fa-edit"></i>
+                <span class="hide-menu">Ver Gastos</span>
+            </a>
+        </li>
+
+        <li>
+            <a [routerLink]="['/cargarGasto']" [routerLinkActive]="['active']" (click)="menu()">
+                <i class="fa fa-edit"></i>
+                <span class="hide-menu">Cargar Gasto</span>
+            </a>
+        </li>
+       
+        
+ 
+    </ul>
+</div>
