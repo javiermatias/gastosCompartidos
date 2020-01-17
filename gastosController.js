@@ -12,6 +12,7 @@ db.query('SELECT * from gasto', function(error, result){
             });
         }else{
             res.json(result);
+            db.end();
         }
      }
   );
@@ -29,6 +30,7 @@ exports.getParcial = function (req, res) {
                 });
             }else{
                 res.json(result);
+                db.end();
             }
          }
       );
@@ -48,6 +50,7 @@ exports.post = function (req, res) {
                 });
             }else{
                 res.json(result);
+                db.end();
             }
          }
       );
