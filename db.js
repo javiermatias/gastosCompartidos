@@ -10,8 +10,7 @@ const mysql = require('mysql');
  });
  
  connection.getConnection((err) => {
-   if(err){
-    connection.release();
+   if(err){    
      console.log('Error connecting to Db');
 	 console.log(err);
      return;
