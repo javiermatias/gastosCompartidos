@@ -1,12 +1,16 @@
 // Initialize express router
 let router = require('express').Router();
 // Set default API response
-router.get('/', function (req, res) {
+
+
+
+
+/* router.get('/', function (req, res) {
     res.json({
         status: 'Funcionando Ok',
         message: 'Bienvenido a la votacion!'
     });
-});
+}); */
 
 
 var gastosController = require('./gastosController');
