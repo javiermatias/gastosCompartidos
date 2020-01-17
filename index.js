@@ -31,13 +31,13 @@ var port = process.env.PORT || 8080;
 // Launch app to listen to specified port
 // Import routes
 
-// Serve static files....
+/* // Serve static files....
 app.use(express.static(__dirname + '/dist/'));
 
 // Send all requests to index.html
 app.get('/*', function(req, res) {
   res.sendFile(path.join(__dirname + '/dist/index.html'));
-});
+}); */
 
 // Use Api routes in the App
 app.use('/api', apiRoutes)
