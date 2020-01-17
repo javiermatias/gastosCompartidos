@@ -39,9 +39,7 @@ app.get('/', function(req, res) {
   res.sendFile(path.join(__dirname + '/dist/index.html'));
 });
 
-setInterval(function () {
-  db.query('SELECT 1');
-}, 5000);
+
 // Use Api routes in the App
 app.use('/api', apiRoutes)
 
