@@ -9,8 +9,9 @@ const mysql = require('mysql');
   database: 'db_a34972_evento'
  });
  
- connection.connect((err) => {
+ connection.getConnection((err) => {
    if(err){
+    connection.release();
      console.log('Error connecting to Db');
 	 console.log(err);
      return;
