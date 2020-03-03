@@ -10,11 +10,18 @@ import { HeaderComponent } from "./shared/header/header.component";
 import { NavigationComponent } from "./shared/navigation/navigation.component";
 import { CargarGastosComponent } from './cargar-gastos/cargar-gastos.component';
 import { FormsModule } from '@angular/forms'; // <-- NgModel lives here
-import { HttpClientModule }    from '@angular/common/http';
+import { HttpClient,HttpClientModule }    from '@angular/common/http';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
- 
+import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { ToastrModule } from 'ngx-toastr';
 import { VerGastosComponent } from './ver-gastos/ver-gastos.component';
+// import ngx-translate and the http loader
+import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
+import {TranslateHttpLoader} from '@ngx-translate/http-loader';
+
+//http loader
+import { NgHttpLoaderModule } from 'ng-http-loader'; // <============
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -30,12 +37,27 @@ import { VerGastosComponent } from './ver-gastos/ver-gastos.component';
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    HttpClientModule,
+    HttpClientModule, 
+    NgbModule,
+ /*  , */
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
-    RouterModule.forRoot(routes, { useHash: true })
-  ],
+    RouterModule.forRoot(routes, { useHash: true }),
+    TranslateModule.forRoot({
+      loader: {
+          provide: TranslateLoader,
+          useFactory: HttpLoaderFactory,
+          deps: [HttpClient]
+      }
+  }),
+  NgHttpLoaderModule.forRoot(), // <============ Don't forget to call 'forRoot()'!
+],
   providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
+
+// required for AOT compilation
+export function HttpLoaderFactory(http: HttpClient) {
+  return new TranslateHttpLoader(http);
+}

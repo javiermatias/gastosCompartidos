@@ -22,12 +22,12 @@
                 <div class="profile-img">
                     <img src="assets/images/gasto.png"/>
                 </div>
-                <span>Gastos Compartidos</span>
+                <span>{{'menu.title' | translate }}</span>
                 <small class="text-center">App</small>
             </a>
         </li>
         <li><a (click)="menu()" [routerLink]="['/dashboard']" [routerLinkActive]="['active']" class="waves-effect"><i class="fa fa-home" ></i> <span
-                class="hide-menu">Resumen</span></a></li>
+                class="hide-menu">{{'menu.item1' | translate }}</span></a></li>
         <!-- <li class=""><a href="javascript:void(0);" class="waves-effect"><i class="fa fa-envelope-o"></i> <span
                 class="hide-menu"> Mailbox <span class="fa arrow"></span><span
                 class="label label-rouded label-danger pull-right">6</span></span></a>
@@ -55,14 +55,14 @@
         <li>
             <a  [routerLink]="['/verGasto']" [routerLinkActive]="['active']" (click)="menu()" >
                 <i class="fa fa-edit"></i>
-                <span class="hide-menu">Ver Gastos</span>
+                <span class="hide-menu">{{'menu.item2' | translate }}</span>
             </a>
         </li>
 
         <li>
             <a [routerLink]="['/cargarGasto']" [routerLinkActive]="['active']" (click)="menu()">
                 <i class="fa fa-edit"></i>
-                <span class="hide-menu">Cargar Gasto</span>
+                <span class="hide-menu">{{'menu.item3' | translate }}</span>
             </a>
         </li>
        

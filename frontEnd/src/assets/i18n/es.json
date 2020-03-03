@@ -1,0 +1,13 @@
+{
+  "app": {
+      "title": "Español"
+    },
+
+
+    "menu": {
+      "title": "Gastos Compartidos",
+      "item1":"Resumen",
+      "item2":"Ver Gastos",
+      "item3":"Cargar Gastos"
+    }
+}

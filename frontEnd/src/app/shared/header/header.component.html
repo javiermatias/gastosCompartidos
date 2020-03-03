@@ -1,16 +1,36 @@
 <header>
     <div class="headerwrapper">
+
+
+
+      <div class="d-sm-none">
         <div class="header-left">
              
                 <button style="background-color: #1f6b9e;" type="button" id="sidebarCollapse" class="btn btn-info" (click)="clickMenu()">
               <i class="fas fa-align-left"></i>
               <span>Menu</span>
-          </button>          
+          </button>  
+          
+         
+          </div>
+
        
         </div>
-    <!--     <div class="header-right">
-            <a class="btn btn-social-icon btn-github hidden-sm-down" href="https://github.com/ssunils/angularadmin" target="_blank"><i class="fa fa-github"></i> DOWNLOAD</a>
-        </div> -->
+       <div class="header-right">
+          
+        <div class="col">
+            <div ngbDropdown class="d-inline-block">
+              <button class="btn btn-outline-primary" id="dropdownBasic1" ngbDropdownToggle>{{idioma}}</button>
+              <div ngbDropdownMenu aria-labelledby="dropdownBasic1">
+                <button ngbDropdownItem (click)="useLanguage('es')">Español</button>
+                <button ngbDropdownItem (click)="useLanguage('en')">English</button>
+            
+              </div>
+            </div>
+        </div>
+        </div>
         <!-- header-right -->
-    </div><!-- headerwrapper -->
+    
+    <!-- headerwrapper -->
+    </div>
 </header>
