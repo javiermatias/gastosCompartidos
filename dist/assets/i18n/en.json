@@ -1,0 +1,12 @@
+{
+  "app": {
+      "title": "English"
+  },
+  "menu": {
+    "title": "Shared expenses",
+    "item1":"Summary",
+    "item2":"See Expenses",
+    "item3":"Charge Expense"
+    
+  }
+}

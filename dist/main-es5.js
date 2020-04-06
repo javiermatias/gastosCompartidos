@@ -7,7 +7,7 @@
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<router-outlet></router-outlet>\n"
+module.exports = "<!-- <ng-http-loader></ng-http-loader> -->\n<router-outlet></router-outlet> \n\n<p>Viva MEXICO CABrONES</p>\n{{'app.title' | translate}}\n\n\n"
 
 /***/ }),
 
@@ -19,6 +19,17 @@ module.exports = "<router-outlet></router-outlet>\n"
 /***/ (function(module, exports) {
 
 module.exports = "<div class=\"\" id=\"page-wrapper\">\n  <div class=\"container-fluid\">\n    <div class=\"row row-stat\">\n      <div class=\"col-sm-12\">\n        <div class=\"panel panel-default\">\n          <div class=\"panel-heading panel-heading-divider\">Cargar Gasto</div>\n          <div class=\"panel-body\">\n            <div class=\"xs-mt-10 xs-mb-10  \">\n              <div class=\"row\">\n                <div class=\"col-md-8\">\n                  <form class=\"form-horizontal\">\n\n                    <div class=\"form-group\">\n                      <div class=\"row\">\n                        <label class=\"col-sm-3 control-label\" for=\"form-control-9\">Tipo Gasto</label>\n                        <div class=\"col-sm-9\">\n                          <select id=\"form-control-23\" class=\"form-control\" name=\"tipoGasto\" [(ngModel)]=\"gasto.tipoGasto\">                            \n                            \n                            <option value=\"Alojamiento\">Alojamiento</option>\n                            <option value=\"Bebida\">Bebida</option>\n                            <option value=\"Comida\">Comida</option>\n                            <option value=\"Transporte\">Transporte</option>\n                            <option value=\"Otro\">Otro</option>\n                       \n                          </select>\n                        </div>\n                      </div>\n                    </div>\n\n                 \n\n                    <div class=\"form-group\">\n                      <div class=\"row\">\n                        <label class=\"col-sm-3 control-label\" for=\"form-control-5\">Detalle</label>\n                        <div class=\"col-sm-9\">\n                          <input id=\"form-control-1\" class=\"form-control\" type=\"email\" name=\"detalle\"\n                                 placeholder=\"Detalle de la compra( Un kilo de asado,etc)\" [(ngModel)]=\"gasto.detalle\">\n                        </div>\n                      </div>\n                    </div>\n\n\n                    <div class=\"form-group\">\n                      <div class=\"row\">\n                        <label class=\"col-sm-3 control-label\" for=\"form-control-9\">Quien Pago?</label>\n                        <div class=\"col-sm-9\">\n                          <select id=\"form-control-10\" class=\"form-control\" name=\"persona\" [(ngModel)]=\"gasto.personaPago\">                            \n                           \n                           <!--  <option value=\"mobile\">Franco</option> -->\n                            <!-- <option value=\"creative\">Gustavo</option> -->\n                            <option value=\"Hugo\">Hugo</option>\n                            <option value=\"Javier\">Javier</option>\n                            <option value=\"Matias\">Matias</option>\n                            <option value=\"Marcelo\">Marcelo</option>\n                            \n                            \n                            \n                       \n                          </select>\n                        </div>\n                      </div>\n                    </div>\n\n\n\n\n                    <div class=\"form-group\">\n                      <div class=\"row\">\n                        <label class=\"col-sm-3 control-label\" for=\"form-control-5\">Monto:</label>\n                        <div class=\"col-sm-9\">\n                          <input id=\"form-control-7\" class=\"form-control\" type=\"email\" name=\"gasto\"\n                                 placeholder=\"0,00\" [(ngModel)]=\"gasto.monto\">\n                        </div>\n                      </div>\n                    </div>\n\n                    <div class=\"form-group\">\n                      <div class=\"row\">\n                        \n                        <div class=\"col-sm-9\">\n                          \n                        <!--   <label class=\"col-sm-3 control-label\" for=\"form-control-5\"></label>\n                            <button  id=\"form-control-6\" class=\"btn btn-space btn-success\"><i class=\"icon icon-left mdi mdi-check\"\n                              (click)=\"guardarGastos()\"></i>Cargar</button>\n                        \n                           -->\n                           <button (click)=\"guardarGasto()\" class=\"btn btn-space btn-success\"> Cargar</button>\n                        </div>\n                      </div>\n                    </div>\n\n\n                    \n                \n               \n                  </form>\n                </div>\n              </div>\n            </div>\n          </div>\n        </div>\n\n       \n      </div>\n    </div>\n  </div>"
+
+/***/ }),
+
+/***/ "./node_modules/raw-loader/index.js!./src/app/login/login.component.html":
+/*!**********************************************************************!*\
+  !*** ./node_modules/raw-loader!./src/app/login/login.component.html ***!
+  \**********************************************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "<p>login works!</p>\n"
 
 /***/ }),
 
@@ -40,7 +51,7 @@ module.exports = "<p>\n  page-not-found works!\n</p>\n"
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<header>\n    <div class=\"headerwrapper\">\n        <div class=\"header-left\">\n             \n                <button style=\"background-color: #1f6b9e;\" type=\"button\" id=\"sidebarCollapse\" class=\"btn btn-info\" (click)=\"clickMenu()\">\n              <i class=\"fas fa-align-left\"></i>\n              <span>Menu</span>\n          </button>          \n       \n        </div>\n    <!--     <div class=\"header-right\">\n            <a class=\"btn btn-social-icon btn-github hidden-sm-down\" href=\"https://github.com/ssunils/angularadmin\" target=\"_blank\"><i class=\"fa fa-github\"></i> DOWNLOAD</a>\n        </div> -->\n        <!-- header-right -->\n    </div><!-- headerwrapper -->\n</header>\n"
+module.exports = "<header>\n    <div class=\"headerwrapper\">\n\n\n\n      <div class=\"d-sm-none\">\n        <div class=\"header-left\">\n             \n                <button style=\"background-color: #1f6b9e;\" type=\"button\" id=\"sidebarCollapse\" class=\"btn btn-info\" (click)=\"clickMenu()\">\n              <i class=\"fas fa-align-left\"></i>\n              <span>Menu</span>\n          </button>  \n          \n         \n          </div>\n\n       \n        </div>\n       <div class=\"header-right\">\n          \n        <div class=\"col\">\n            <div ngbDropdown class=\"d-inline-block\">\n              <button class=\"btn btn-outline-primary\" id=\"dropdownBasic1\" ngbDropdownToggle>{{idioma}}</button>\n              <div ngbDropdownMenu aria-labelledby=\"dropdownBasic1\">\n                <button ngbDropdownItem (click)=\"useLanguage('es')\">Español</button>\n                <button ngbDropdownItem (click)=\"useLanguage('en')\">English</button>\n            \n              </div>\n            </div>\n        </div>\n        </div>\n        <!-- header-right -->\n    \n    <!-- headerwrapper -->\n    </div>\n</header>\n"
 
 /***/ }),
 
@@ -51,7 +62,7 @@ module.exports = "<header>\n    <div class=\"headerwrapper\">\n        <div clas
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "<!-- <div class=\"d-sm-none\" > \n      <button type=\"button\" id=\"sidebarCollapse\" class=\"btn btn-info\">\n    <i class=\"fas fa-align-left\"></i>\n    <span>Menu</span>\n</button> \n\n</div>-->\n\n<div [ngClass]=\"status ? 'sidebar' : 'sidebar d-none d-sm-block'\" >\n    \n    <ul class=\"nav in\" id=\"side-menu\">\n  <!--       <li class=\"sidebar-search hidden-sm hidden-md hidden-lg\">\n           \n            <div class=\"input-group custom-search-form\">\n                <input type=\"text\" class=\"form-control\" placeholder=\"Search...\"> <span class=\"input-group-btn\">\n            <button class=\"btn btn-default\" type=\"button\"> <i class=\"fa fa-search\"></i> </button>\n            </span></div>\n           \n        </li> -->\n        <li class=\"user-pro\">\n            <a href=\"#\" class=\"text-center\">\n                <div class=\"profile-img\">\n                    <img src=\"assets/images/gasto.png\"/>\n                </div>\n                <span>Gastos Compartidos</span>\n                <small class=\"text-center\">App</small>\n            </a>\n        </li>\n        <li><a (click)=\"menu()\" [routerLink]=\"['/dashboard']\" [routerLinkActive]=\"['active']\" class=\"waves-effect\"><i class=\"fa fa-home\" ></i> <span\n                class=\"hide-menu\">Resumen</span></a></li>\n        <!-- <li class=\"\"><a href=\"javascript:void(0);\" class=\"waves-effect\"><i class=\"fa fa-envelope-o\"></i> <span\n                class=\"hide-menu\"> Mailbox <span class=\"fa arrow\"></span><span\n                class=\"label label-rouded label-danger pull-right\">6</span></span></a>\n        </li> -->\n     <!--    <li>\n            <a [routerLink]=\"['/ui-elements']\" [routerLinkActive]=\"['active']\">\n                <i class=\"fa fa-edit\"></i>\n                <span class=\"hide-menu\">UI Elements</span>\n            </a>\n        </li>\n        <li>\n            <a  [routerLink]=\"['/forms']\" [routerLinkActive]=\"['active']\">\n                <i class=\"fa fa-edit\"></i>\n                <span class=\"hide-menu\">Form</span>\n            </a>\n        </li>\n        <li>\n            <a  [routerLink]=\"['/tables']\" [routerLinkActive]=\"['active']\">\n                <i class=\"fa fa-bars\"></i>\n                <span class=\"hide-menu\">Tables</span>\n            </a>\n        </li> -->\n\n\n        <li>\n            <a  [routerLink]=\"['/verGasto']\" [routerLinkActive]=\"['active']\" (click)=\"menu()\" >\n                <i class=\"fa fa-edit\"></i>\n                <span class=\"hide-menu\">Ver Gastos</span>\n            </a>\n        </li>\n\n        <li>\n            <a [routerLink]=\"['/cargarGasto']\" [routerLinkActive]=\"['active']\" (click)=\"menu()\">\n                <i class=\"fa fa-edit\"></i>\n                <span class=\"hide-menu\">Cargar Gasto</span>\n            </a>\n        </li>\n       \n        \n \n    </ul>\n</div>"
+module.exports = "<!-- <div class=\"d-sm-none\" > \n      <button type=\"button\" id=\"sidebarCollapse\" class=\"btn btn-info\">\n    <i class=\"fas fa-align-left\"></i>\n    <span>Menu</span>\n</button> \n\n</div>-->\n\n<div [ngClass]=\"status ? 'sidebar' : 'sidebar d-none d-sm-block'\" >\n    \n    <ul class=\"nav in\" id=\"side-menu\">\n  <!--       <li class=\"sidebar-search hidden-sm hidden-md hidden-lg\">\n           \n            <div class=\"input-group custom-search-form\">\n                <input type=\"text\" class=\"form-control\" placeholder=\"Search...\"> <span class=\"input-group-btn\">\n            <button class=\"btn btn-default\" type=\"button\"> <i class=\"fa fa-search\"></i> </button>\n            </span></div>\n           \n        </li> -->\n        <li class=\"user-pro\">\n            <a href=\"#\" class=\"text-center\">\n                <div class=\"profile-img\">\n                    <img src=\"assets/images/gasto.png\"/>\n                </div>\n                <span>{{'menu.title' | translate }}</span>\n                <small class=\"text-center\">App</small>\n            </a>\n        </li>\n        <li><a (click)=\"menu()\" [routerLink]=\"['/dashboard']\" [routerLinkActive]=\"['active']\" class=\"waves-effect\"><i class=\"fa fa-home\" ></i> <span\n                class=\"hide-menu\">{{'menu.item1' | translate }}</span></a></li>\n        <!-- <li class=\"\"><a href=\"javascript:void(0);\" class=\"waves-effect\"><i class=\"fa fa-envelope-o\"></i> <span\n                class=\"hide-menu\"> Mailbox <span class=\"fa arrow\"></span><span\n                class=\"label label-rouded label-danger pull-right\">6</span></span></a>\n        </li> -->\n     <!--    <li>\n            <a [routerLink]=\"['/ui-elements']\" [routerLinkActive]=\"['active']\">\n                <i class=\"fa fa-edit\"></i>\n                <span class=\"hide-menu\">UI Elements</span>\n            </a>\n        </li>\n        <li>\n            <a  [routerLink]=\"['/forms']\" [routerLinkActive]=\"['active']\">\n                <i class=\"fa fa-edit\"></i>\n                <span class=\"hide-menu\">Form</span>\n            </a>\n        </li>\n        <li>\n            <a  [routerLink]=\"['/tables']\" [routerLinkActive]=\"['active']\">\n                <i class=\"fa fa-bars\"></i>\n                <span class=\"hide-menu\">Tables</span>\n            </a>\n        </li> -->\n\n\n        <li>\n            <a  [routerLink]=\"['/verGasto']\" [routerLinkActive]=\"['active']\" (click)=\"menu()\" >\n                <i class=\"fa fa-edit\"></i>\n                <span class=\"hide-menu\">{{'menu.item2' | translate }}</span>\n            </a>\n        </li>\n\n        <li>\n            <a [routerLink]=\"['/cargarGasto']\" [routerLinkActive]=\"['active']\" (click)=\"menu()\">\n                <i class=\"fa fa-edit\"></i>\n                <span class=\"hide-menu\">{{'menu.item3' | translate }}</span>\n            </a>\n        </li>\n       \n        \n \n    </ul>\n</div>"
 
 /***/ }),
 
@@ -136,22 +147,31 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_router__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @angular/router */ "./node_modules/@angular/router/fesm5/router.js");
+/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__(/*! @ngx-translate/core */ "./node_modules/@ngx-translate/core/fesm5/ngx-translate-core.js");
+
 
 
 
 
 var AppComponent = /** @class */ (function () {
-    function AppComponent(titleService, router, activatedRoute) {
+    function AppComponent(titleService, router, activatedRoute, translate) {
         var _this = this;
         this.titleService = titleService;
-        this.title = 'app works!';
+        this.translate = translate;
+        this.languague = 'hola';
+        //this.languague=translate.currentLang;
+        console.log(translate.currentLang);
         router.events.subscribe(function (event) {
             if (event instanceof _angular_router__WEBPACK_IMPORTED_MODULE_3__["NavigationEnd"]) {
                 var title = _this.getTitle(router.routerState, router.routerState.root).join(' | ');
                 titleService.setTitle(title);
             }
         });
+        this.translate.use('es');
     }
+    AppComponent.prototype.ngOnInit = function () {
+        this.getCurrentLang();
+    };
     AppComponent.prototype.getTitle = function (state, parent) {
         var data = [];
         if (parent && parent.snapshot.data && parent.snapshot.data.title) {
@@ -165,10 +185,15 @@ var AppComponent = /** @class */ (function () {
     AppComponent.prototype.setTitle = function (newTitle) {
         this.titleService.setTitle(newTitle);
     };
+    AppComponent.prototype.getCurrentLang = function () {
+        console.log('browser lang', this.translate.getBrowserLang());
+        console.log('browser lang', this.translate.currentLang);
+    };
     AppComponent.ctorParameters = function () { return [
         { type: _angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["Title"] },
         { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"] },
-        { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] }
+        { type: _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"] },
+        { type: _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__["TranslateService"] }
     ]; };
     AppComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -176,7 +201,7 @@ var AppComponent = /** @class */ (function () {
             template: __webpack_require__(/*! raw-loader!./app.component.html */ "./node_modules/raw-loader/index.js!./src/app/app.component.html"),
             styles: [__webpack_require__(/*! ./app.component.scss */ "./src/app/app.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["Title"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_angular_platform_browser__WEBPACK_IMPORTED_MODULE_2__["Title"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["Router"], _angular_router__WEBPACK_IMPORTED_MODULE_3__["ActivatedRoute"], _ngx_translate_core__WEBPACK_IMPORTED_MODULE_4__["TranslateService"]])
     ], AppComponent);
     return AppComponent;
 }());
@@ -189,12 +214,14 @@ var AppComponent = /** @class */ (function () {
 /*!*******************************!*\
   !*** ./src/app/app.module.ts ***!
   \*******************************/
-/*! exports provided: AppModule */
+/*! exports provided: provideConfig, AppModule, HttpLoaderFactory */
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
 "use strict";
 __webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "provideConfig", function() { return provideConfig; });
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "AppModule", function() { return AppModule; });
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "HttpLoaderFactory", function() { return HttpLoaderFactory; });
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/platform-browser */ "./node_modules/@angular/platform-browser/fesm5/platform-browser.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
@@ -210,8 +237,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var _angular_forms__WEBPACK_IMPORTED_MODULE_12__ = __webpack_require__(/*! @angular/forms */ "./node_modules/@angular/forms/fesm5/forms.js");
 /* harmony import */ var _angular_common_http__WEBPACK_IMPORTED_MODULE_13__ = __webpack_require__(/*! @angular/common/http */ "./node_modules/@angular/common/fesm5/http.js");
 /* harmony import */ var _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_14__ = __webpack_require__(/*! @angular/platform-browser/animations */ "./node_modules/@angular/platform-browser/fesm5/animations.js");
-/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! ngx-toastr */ "./node_modules/ngx-toastr/fesm5/ngx-toastr.js");
-/* harmony import */ var _ver_gastos_ver_gastos_component__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ./ver-gastos/ver-gastos.component */ "./src/app/ver-gastos/ver-gastos.component.ts");
+/* harmony import */ var _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_15__ = __webpack_require__(/*! @ng-bootstrap/ng-bootstrap */ "./node_modules/@ng-bootstrap/ng-bootstrap/fesm5/ng-bootstrap.js");
+/* harmony import */ var ngx_toastr__WEBPACK_IMPORTED_MODULE_16__ = __webpack_require__(/*! ngx-toastr */ "./node_modules/ngx-toastr/fesm5/ngx-toastr.js");
+/* harmony import */ var _ver_gastos_ver_gastos_component__WEBPACK_IMPORTED_MODULE_17__ = __webpack_require__(/*! ./ver-gastos/ver-gastos.component */ "./src/app/ver-gastos/ver-gastos.component.ts");
+/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_18__ = __webpack_require__(/*! @ngx-translate/core */ "./node_modules/@ngx-translate/core/fesm5/ngx-translate-core.js");
+/* harmony import */ var _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_19__ = __webpack_require__(/*! @ngx-translate/http-loader */ "./node_modules/@ngx-translate/http-loader/fesm5/ngx-translate-http-loader.js");
+/* harmony import */ var angularx_social_login__WEBPACK_IMPORTED_MODULE_20__ = __webpack_require__(/*! angularx-social-login */ "./node_modules/angularx-social-login/angularx-social-login.es5.js");
+/* harmony import */ var _login_login_component__WEBPACK_IMPORTED_MODULE_21__ = __webpack_require__(/*! ./login/login.component */ "./src/app/login/login.component.ts");
 
 
 
@@ -229,6 +261,29 @@ __webpack_require__.r(__webpack_exports__);
 
 
 
+
+// import ngx-translate and the http loader
+
+
+//http loader
+/* import { NgHttpLoaderModule } from 'ng-http-loader'; */ // <============
+//Login
+
+
+
+var config = new angularx_social_login__WEBPACK_IMPORTED_MODULE_20__["AuthServiceConfig"]([
+    {
+        id: angularx_social_login__WEBPACK_IMPORTED_MODULE_20__["GoogleLoginProvider"].PROVIDER_ID,
+        provider: new angularx_social_login__WEBPACK_IMPORTED_MODULE_20__["GoogleLoginProvider"]("Google-OAuth-Client-Id")
+    },
+    {
+        id: angularx_social_login__WEBPACK_IMPORTED_MODULE_20__["FacebookLoginProvider"].PROVIDER_ID,
+        provider: new angularx_social_login__WEBPACK_IMPORTED_MODULE_20__["FacebookLoginProvider"]("Facebook-App-Id")
+    }
+]);
+function provideConfig() {
+    return config;
+}
 var AppModule = /** @class */ (function () {
     function AppModule() {
     }
@@ -242,24 +297,41 @@ var AppModule = /** @class */ (function () {
                 _template_left_nav_template_component__WEBPACK_IMPORTED_MODULE_6__["LeftNavTemplateComponent"],
                 _shared_navigation_navigation_component__WEBPACK_IMPORTED_MODULE_10__["NavigationComponent"],
                 _cargar_gastos_cargar_gastos_component__WEBPACK_IMPORTED_MODULE_11__["CargarGastosComponent"],
-                _ver_gastos_ver_gastos_component__WEBPACK_IMPORTED_MODULE_16__["VerGastosComponent"]
+                _ver_gastos_ver_gastos_component__WEBPACK_IMPORTED_MODULE_17__["VerGastosComponent"],
+                _login_login_component__WEBPACK_IMPORTED_MODULE_21__["LoginComponent"]
             ],
             imports: [
                 _angular_platform_browser__WEBPACK_IMPORTED_MODULE_1__["BrowserModule"],
                 _app_routing__WEBPACK_IMPORTED_MODULE_7__["AppRoutingModule"],
                 _angular_forms__WEBPACK_IMPORTED_MODULE_12__["FormsModule"],
                 _angular_common_http__WEBPACK_IMPORTED_MODULE_13__["HttpClientModule"],
+                _ng_bootstrap_ng_bootstrap__WEBPACK_IMPORTED_MODULE_15__["NgbModule"],
+                angularx_social_login__WEBPACK_IMPORTED_MODULE_20__["SocialLoginModule"],
                 _angular_platform_browser_animations__WEBPACK_IMPORTED_MODULE_14__["BrowserAnimationsModule"],
-                ngx_toastr__WEBPACK_IMPORTED_MODULE_15__["ToastrModule"].forRoot(),
-                _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(_app_routing__WEBPACK_IMPORTED_MODULE_7__["routes"], { useHash: true })
+                ngx_toastr__WEBPACK_IMPORTED_MODULE_16__["ToastrModule"].forRoot(),
+                _angular_router__WEBPACK_IMPORTED_MODULE_3__["RouterModule"].forRoot(_app_routing__WEBPACK_IMPORTED_MODULE_7__["routes"], { useHash: true }),
+                _ngx_translate_core__WEBPACK_IMPORTED_MODULE_18__["TranslateModule"].forRoot({
+                    loader: {
+                        provide: _ngx_translate_core__WEBPACK_IMPORTED_MODULE_18__["TranslateLoader"],
+                        useFactory: HttpLoaderFactory,
+                        deps: [_angular_common_http__WEBPACK_IMPORTED_MODULE_13__["HttpClient"]]
+                    }
+                }),
             ],
-            providers: [],
+            providers: [{
+                    provide: angularx_social_login__WEBPACK_IMPORTED_MODULE_20__["AuthServiceConfig"],
+                    useFactory: provideConfig
+                }],
             bootstrap: [_app_component__WEBPACK_IMPORTED_MODULE_4__["AppComponent"]]
         })
     ], AppModule);
     return AppModule;
 }());
 
+// required for AOT compilation
+function HttpLoaderFactory(http) {
+    return new _ngx_translate_http_loader__WEBPACK_IMPORTED_MODULE_19__["TranslateHttpLoader"](http);
+}
 
 
 /***/ }),
@@ -454,6 +526,51 @@ var CargarGastosComponent = /** @class */ (function () {
 
 /***/ }),
 
+/***/ "./src/app/login/login.component.scss":
+/*!********************************************!*\
+  !*** ./src/app/login/login.component.scss ***!
+  \********************************************/
+/*! no static exports found */
+/***/ (function(module, exports) {
+
+module.exports = "\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IiIsImZpbGUiOiJzcmMvYXBwL2xvZ2luL2xvZ2luLmNvbXBvbmVudC5zY3NzIn0= */"
+
+/***/ }),
+
+/***/ "./src/app/login/login.component.ts":
+/*!******************************************!*\
+  !*** ./src/app/login/login.component.ts ***!
+  \******************************************/
+/*! exports provided: LoginComponent */
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "LoginComponent", function() { return LoginComponent; });
+/* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
+/* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
+
+
+var LoginComponent = /** @class */ (function () {
+    function LoginComponent() {
+    }
+    LoginComponent.prototype.ngOnInit = function () {
+    };
+    LoginComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
+        Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
+            selector: 'app-login',
+            template: __webpack_require__(/*! raw-loader!./login.component.html */ "./node_modules/raw-loader/index.js!./src/app/login/login.component.html"),
+            styles: [__webpack_require__(/*! ./login.component.scss */ "./src/app/login/login.component.scss")]
+        }),
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [])
+    ], LoginComponent);
+    return LoginComponent;
+}());
+
+
+
+/***/ }),
+
 /***/ "./src/app/modelos/gasto.ts":
 /*!**********************************!*\
   !*** ./src/app/modelos/gasto.ts ***!
@@ -608,7 +725,7 @@ var MenuService = /** @class */ (function () {
 /*! no static exports found */
 /***/ (function(module, exports) {
 
-module.exports = "/********** 3. HEADER STYLES **********/\n/**************************************/\n.headerwrapper {\n  background-color: #1f6b9e;\n  min-height: 60px;\n  width: 100%;\n  z-index: 1000;\n}\n.headerwrapper:after {\n  clear: both;\n  display: block;\n  content: \"\";\n}\n.header-left {\n  float: left;\n}\n.header-right {\n  float: right;\n}\na.btn.btn-social-icon.btn-github {\n  color: #fff;\n  border: 1px solid #fff;\n  margin: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2hhcmVkL2hlYWRlci9DOlxcVXNlcnNcXG1hdGlhXFxEb2N1bWVudHNcXFByb2dyYW1hc1xcR2FzdG9zIENvbXBhcnRpZG9zXFxmcm9udEVuZC9zcmNcXGFwcFxcc2hhcmVkXFxoZWFkZXJcXGhlYWRlci5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvc2hhcmVkL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUEsdUNBQUE7QUFDQSx1Q0FBQTtBQUVBO0VBQ0kseUJBQUE7RUFDQSxnQkFBQTtFQUNBLFdBQUE7RUFDQSxhQUFBO0FDRko7QURHSTtFQUNJLFdBQUE7RUFDQSxjQUFBO0VBQ0EsV0FBQTtBQ0RSO0FESUE7RUFDSSxXQUFBO0FDREo7QURLQTtFQUNJLFlBQUE7QUNGSjtBREtBO0VBQ0ksV0FBQTtFQUNBLHNCQUFBO0VBQ0EsWUFBQTtBQ0ZKIiwiZmlsZSI6InNyYy9hcHAvc2hhcmVkL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LnNjc3MiLCJzb3VyY2VzQ29udGVudCI6WyJcblxuLyoqKioqKioqKiogMy4gSEVBREVSIFNUWUxFUyAqKioqKioqKioqL1xuLyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqL1xuXG4uaGVhZGVyd3JhcHBlciB7XG4gICAgYmFja2dyb3VuZC1jb2xvcjogIzFmNmI5ZTtcbiAgICBtaW4taGVpZ2h0OiA2MHB4O1xuICAgIHdpZHRoOiAxMDAlO1xuICAgIHotaW5kZXg6IDEwMDA7XG4gICAgJjphZnRlciB7XG4gICAgICAgIGNsZWFyOiBib3RoO1xuICAgICAgICBkaXNwbGF5OiBibG9jaztcbiAgICAgICAgY29udGVudDogJyc7XG4gICAgfVxufVxuLmhlYWRlci1sZWZ0IHtcbiAgICBmbG9hdDogbGVmdDtcbiAgICBcbn1cblxuLmhlYWRlci1yaWdodCB7XG4gICAgZmxvYXQ6IHJpZ2h0O1xufVxuXG5hLmJ0bi5idG4tc29jaWFsLWljb24uYnRuLWdpdGh1YiB7XG4gICAgY29sb3I6ICNmZmY7XG4gICAgYm9yZGVyOiAxcHggc29saWQgI2ZmZjtcbiAgICBtYXJnaW46IDEwcHg7XG59IiwiLyoqKioqKioqKiogMy4gSEVBREVSIFNUWUxFUyAqKioqKioqKioqL1xuLyoqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqL1xuLmhlYWRlcndyYXBwZXIge1xuICBiYWNrZ3JvdW5kLWNvbG9yOiAjMWY2YjllO1xuICBtaW4taGVpZ2h0OiA2MHB4O1xuICB3aWR0aDogMTAwJTtcbiAgei1pbmRleDogMTAwMDtcbn1cbi5oZWFkZXJ3cmFwcGVyOmFmdGVyIHtcbiAgY2xlYXI6IGJvdGg7XG4gIGRpc3BsYXk6IGJsb2NrO1xuICBjb250ZW50OiBcIlwiO1xufVxuXG4uaGVhZGVyLWxlZnQge1xuICBmbG9hdDogbGVmdDtcbn1cblxuLmhlYWRlci1yaWdodCB7XG4gIGZsb2F0OiByaWdodDtcbn1cblxuYS5idG4uYnRuLXNvY2lhbC1pY29uLmJ0bi1naXRodWIge1xuICBjb2xvcjogI2ZmZjtcbiAgYm9yZGVyOiAxcHggc29saWQgI2ZmZjtcbiAgbWFyZ2luOiAxMHB4O1xufSJdfQ== */"
+module.exports = "/********** 3. HEADER STYLES **********/\n/**************************************/\n.headerwrapper {\n  background-color: #1f6b9e;\n  min-height: 60px;\n  width: 100%;\n  z-index: 1000;\n}\n.headerwrapper:after {\n  clear: both;\n  display: block;\n  content: \"\";\n}\n.header-left {\n  float: left;\n}\n.btn-outline-primary {\n  color: #f7f9fb;\n  border-color: #007bff;\n}\n.header-right {\n  float: right;\n}\na.btn.btn-social-icon.btn-github {\n  color: #fff;\n  border: 1px solid #fff;\n  margin: 10px;\n}\n/*# sourceMappingURL=data:application/json;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbInNyYy9hcHAvc2hhcmVkL2hlYWRlci9DOlxcVXNlcnNcXG1hdGlhXFxEb2N1bWVudHNcXFByb2dyYW1hc1xcR2FzdG9zIENvbXBhcnRpZG9zXFxmcm9udEVuZC9zcmNcXGFwcFxcc2hhcmVkXFxoZWFkZXJcXGhlYWRlci5jb21wb25lbnQuc2NzcyIsInNyYy9hcHAvc2hhcmVkL2hlYWRlci9oZWFkZXIuY29tcG9uZW50LnNjc3MiXSwibmFtZXMiOltdLCJtYXBwaW5ncyI6IkFBRUEsdUNBQUE7QUFDQSx1Q0FBQTtBQUVBO0VBQ0kseUJBQUE7RUFDQSxnQkFBQTtFQUNBLFdBQUE7RUFDQSxhQUFBO0FDRko7QURHSTtFQUNJLFdBQUE7RUFDQSxjQUFBO0VBQ0EsV0FBQTtBQ0RSO0FESUE7RUFDSSxXQUFBO0FDREo7QURLQTtFQUNJLGNBQUE7RUFDQSxxQkFBQTtBQ0ZKO0FES0E7RUFDSSxZQUFBO0FDRko7QURLQTtFQUNJLFdBQUE7RUFDQSxzQkFBQTtFQUNBLFlBQUE7QUNGSiIsImZpbGUiOiJzcmMvYXBwL3NoYXJlZC9oZWFkZXIvaGVhZGVyLmNvbXBvbmVudC5zY3NzIiwic291cmNlc0NvbnRlbnQiOlsiXG5cbi8qKioqKioqKioqIDMuIEhFQURFUiBTVFlMRVMgKioqKioqKioqKi9cbi8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi9cblxuLmhlYWRlcndyYXBwZXIge1xuICAgIGJhY2tncm91bmQtY29sb3I6ICMxZjZiOWU7XG4gICAgbWluLWhlaWdodDogNjBweDtcbiAgICB3aWR0aDogMTAwJTtcbiAgICB6LWluZGV4OiAxMDAwO1xuICAgICY6YWZ0ZXIge1xuICAgICAgICBjbGVhcjogYm90aDtcbiAgICAgICAgZGlzcGxheTogYmxvY2s7XG4gICAgICAgIGNvbnRlbnQ6ICcnO1xuICAgIH1cbn1cbi5oZWFkZXItbGVmdCB7XG4gICAgZmxvYXQ6IGxlZnQ7XG4gICAgXG59XG5cbi5idG4tb3V0bGluZS1wcmltYXJ5IHtcbiAgICBjb2xvcjogI2Y3ZjlmYjtcbiAgICBib3JkZXItY29sb3I6ICMwMDdiZmY7XG59XG5cbi5oZWFkZXItcmlnaHQge1xuICAgIGZsb2F0OiByaWdodDtcbn1cblxuYS5idG4uYnRuLXNvY2lhbC1pY29uLmJ0bi1naXRodWIge1xuICAgIGNvbG9yOiAjZmZmO1xuICAgIGJvcmRlcjogMXB4IHNvbGlkICNmZmY7XG4gICAgbWFyZ2luOiAxMHB4O1xufSIsIi8qKioqKioqKioqIDMuIEhFQURFUiBTVFlMRVMgKioqKioqKioqKi9cbi8qKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKioqKi9cbi5oZWFkZXJ3cmFwcGVyIHtcbiAgYmFja2dyb3VuZC1jb2xvcjogIzFmNmI5ZTtcbiAgbWluLWhlaWdodDogNjBweDtcbiAgd2lkdGg6IDEwMCU7XG4gIHotaW5kZXg6IDEwMDA7XG59XG4uaGVhZGVyd3JhcHBlcjphZnRlciB7XG4gIGNsZWFyOiBib3RoO1xuICBkaXNwbGF5OiBibG9jaztcbiAgY29udGVudDogXCJcIjtcbn1cblxuLmhlYWRlci1sZWZ0IHtcbiAgZmxvYXQ6IGxlZnQ7XG59XG5cbi5idG4tb3V0bGluZS1wcmltYXJ5IHtcbiAgY29sb3I6ICNmN2Y5ZmI7XG4gIGJvcmRlci1jb2xvcjogIzAwN2JmZjtcbn1cblxuLmhlYWRlci1yaWdodCB7XG4gIGZsb2F0OiByaWdodDtcbn1cblxuYS5idG4uYnRuLXNvY2lhbC1pY29uLmJ0bi1naXRodWIge1xuICBjb2xvcjogI2ZmZjtcbiAgYm9yZGVyOiAxcHggc29saWQgI2ZmZjtcbiAgbWFyZ2luOiAxMHB4O1xufSJdfQ== */"
 
 /***/ }),
 
@@ -625,22 +742,37 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony import */ var tslib__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! tslib */ "./node_modules/tslib/tslib.es6.js");
 /* harmony import */ var _angular_core__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! @angular/core */ "./node_modules/@angular/core/fesm5/core.js");
 /* harmony import */ var _servicios_menu_service__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ../../servicios/menu.service */ "./src/app/servicios/menu.service.ts");
+/* harmony import */ var _ngx_translate_core__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__(/*! @ngx-translate/core */ "./node_modules/@ngx-translate/core/fesm5/ngx-translate-core.js");
+
 
 
 
 var HeaderComponent = /** @class */ (function () {
-    function HeaderComponent(_menuService) {
+    function HeaderComponent(_menuService, translate) {
         this._menuService = _menuService;
+        this.translate = translate;
         this.status = false;
+        this.idioma = "Language";
+        translate.setDefaultLang('es');
     }
     HeaderComponent.prototype.ngOnInit = function () {
+    };
+    HeaderComponent.prototype.useLanguage = function (language) {
+        if (language == 'es') {
+            this.idioma = "Español";
+        }
+        else if (language == 'en') {
+            this.idioma = "English";
+        }
+        this.translate.use(language);
     };
     HeaderComponent.prototype.clickMenu = function () {
         this.status = !this.status;
         this._menuService.mysubject.next(this.status);
     };
     HeaderComponent.ctorParameters = function () { return [
-        { type: _servicios_menu_service__WEBPACK_IMPORTED_MODULE_2__["MenuService"] }
+        { type: _servicios_menu_service__WEBPACK_IMPORTED_MODULE_2__["MenuService"] },
+        { type: _ngx_translate_core__WEBPACK_IMPORTED_MODULE_3__["TranslateService"] }
     ]; };
     HeaderComponent = tslib__WEBPACK_IMPORTED_MODULE_0__["__decorate"]([
         Object(_angular_core__WEBPACK_IMPORTED_MODULE_1__["Component"])({
@@ -648,7 +780,7 @@ var HeaderComponent = /** @class */ (function () {
             template: __webpack_require__(/*! raw-loader!./header.component.html */ "./node_modules/raw-loader/index.js!./src/app/shared/header/header.component.html"),
             styles: [__webpack_require__(/*! ./header.component.scss */ "./src/app/shared/header/header.component.scss")]
         }),
-        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_servicios_menu_service__WEBPACK_IMPORTED_MODULE_2__["MenuService"]])
+        tslib__WEBPACK_IMPORTED_MODULE_0__["__metadata"]("design:paramtypes", [_servicios_menu_service__WEBPACK_IMPORTED_MODULE_2__["MenuService"], _ngx_translate_core__WEBPACK_IMPORTED_MODULE_3__["TranslateService"]])
     ], HeaderComponent);
     return HeaderComponent;
 }());

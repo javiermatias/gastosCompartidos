@@ -3,10 +3,10 @@ const mysql = require('mysql');
  // First you need to create a connection to the db
  const connection = mysql.createPool({
   connectionLimit : 10,
-   host: 'localhost',
-   user: 'root',
-   password: '123456',   
-  database: 'gastos'
+   host: 'MYSQL5014.site4now.net',
+   user: 'a34972_smart',
+   password: '99.tutuca',   
+  database: 'db_a34972_smart'
  });
  
  connection.getConnection((err) => {
