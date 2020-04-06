@@ -4,7 +4,7 @@ Gastos compartidos
 
 En principio solo se va crear una app monousuario, con auth en gmail y opcional(facebook), con dos idiomas(español e ingles),
 que permita crear-ver-eliminar grupos, agregar participantes a los grupos, crear-modificar-eliminar gastos. Generar una app para subirla a android.
-La idea luego es ampliarlo con multiples usuarios en un mismo grupo.
+La idea luego es ampliarlo con multiples usuarios en un mismo grupo. Y que uno pueda enviar la invitacion el admin para que puedas ver el grupo.
 
 
 
