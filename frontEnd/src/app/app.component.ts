@@ -14,6 +14,9 @@ declare var jQuery: any;
 
 
 export class AppComponent implements OnInit {
+
+
+  
   ngOnInit(): void {
     this.getCurrentLang();
   }

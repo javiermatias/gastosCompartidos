@@ -20,7 +20,31 @@ import {TranslateLoader, TranslateModule} from '@ngx-translate/core';
 import {TranslateHttpLoader} from '@ngx-translate/http-loader';
 
 //http loader
-import { NgHttpLoaderModule } from 'ng-http-loader'; // <============
+/* import { NgHttpLoaderModule } from 'ng-http-loader'; */ // <============
+
+//Login
+import { SocialLoginModule, AuthServiceConfig } from "angularx-social-login";
+import { GoogleLoginProvider, FacebookLoginProvider } from "angularx-social-login";
+import { LoginComponent } from './login/login.component';
+let config = new AuthServiceConfig([
+  {
+    id: GoogleLoginProvider.PROVIDER_ID,
+    provider: new GoogleLoginProvider("Google-OAuth-Client-Id")
+  },
+  {
+    id: FacebookLoginProvider.PROVIDER_ID,
+    provider: new FacebookLoginProvider("Facebook-App-Id")
+  }
+]);
+ 
+export function provideConfig() {
+  return config;
+}
+
+
+
+
+
 
 @NgModule({
   declarations: [
@@ -31,7 +55,8 @@ import { NgHttpLoaderModule } from 'ng-http-loader'; // <============
     LeftNavTemplateComponent,
     NavigationComponent,
     CargarGastosComponent,
-    VerGastosComponent
+    VerGastosComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -39,7 +64,7 @@ import { NgHttpLoaderModule } from 'ng-http-loader'; // <============
     FormsModule,
     HttpClientModule, 
     NgbModule,
- /*  , */
+    SocialLoginModule,
     BrowserAnimationsModule, // required animations module
     ToastrModule.forRoot(), // ToastrModule added
     RouterModule.forRoot(routes, { useHash: true }),
@@ -50,9 +75,12 @@ import { NgHttpLoaderModule } from 'ng-http-loader'; // <============
           deps: [HttpClient]
       }
   }),
-  NgHttpLoaderModule.forRoot(), // <============ Don't forget to call 'forRoot()'!
+ /*  NgHttpLoaderModule.forRoot(), // <============ Don't forget to call 'forRoot()'! */
 ],
-  providers: [],
+  providers: [  {
+    provide: AuthServiceConfig,
+    useFactory: provideConfig
+  }],
   bootstrap: [AppComponent]
 })
 export class AppModule {}
