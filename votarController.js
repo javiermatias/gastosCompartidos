@@ -18,7 +18,7 @@ exports.index = function (req, res) {
 };
 
 exports.habilitado= function (req, res) {
-    let habilitado = false;
+    let habilitado = true;
     res.json(habilitado);
 };
 
