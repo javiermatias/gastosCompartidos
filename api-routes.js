@@ -36,6 +36,8 @@ router.route('/votar')
 router.route('/votantes')
     .get(votarController.index);
 
+    router.route('/habilitado')
+    .get(votarController.habilitado);
 /* var candidatoController = require('./candidatoController');
 
 router.route('/candidato')

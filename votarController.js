@@ -17,6 +17,11 @@ exports.index = function (req, res) {
     });
 };
 
+exports.habilitado= function (req, res) {
+    let habilitado = false;
+    res.json(habilitado);
+};
+
 exports.buscar = function (req, res) {
     var _dni = req.query.dni; 
   Voto.find({dni: _dni }, function (err, voto) {
